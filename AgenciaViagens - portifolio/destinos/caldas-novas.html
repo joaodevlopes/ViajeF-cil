@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ViajeFácil - Pacote para Caldas Novas</title>
+    <meta name="description"
+        content="Pacote de viagem para Caldas Novas com hospedagem, parques aquáticos e transporte incluso. Reserve agora!">
+
+    <!-- Fontes & Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="destinations.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../img/ChatGPT Image 18_06_2025, 21_53_52.png" alt="ViajeFácil" class="logo-img">
+            </a>
+
+            <nav id="desktop-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#home">Pacotes turísticos <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="../pacotes/pacotes-aereos.html" data-filter="aereo">Aéreo</a>
+                            <a href="../pacotes/pacotes-cruzeiro.html" data-filter="cruzeiro">Cruzeiro</a>
+                            <a href="../pacotes/pacotes-rodoviarios.html" data-filter="rodoviarios">Rodoviário</a>
+                        </div>
+                    </li>
+                    <li><a href="../index.html#sobre">Sobre Nós</a></li>
+                    <li><a href="../index.html#depoimentos">Depoimentos</a></li>
+                    <li><a href="./caldas-novas.html">Caldas Novas</a></li>
+                </ul>
+                <a href="https://wa.me/9999999999999" target="_blank" class="btn btn-primary">Fale Conosco</a>
+            </nav>
+
+            <button id="mobile-menu-btn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <nav id="mobile-nav">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="mobile-nav-link">Pacotes turísticos</a>
+                    <div class="dropdown-menu">
+                        <a href="../pacotes/pacotes-rodoviarios.html" class="mobile-nav-link"
+                            data-filter="rodoviario">Rodoviário</a>
+                        <a href="../pacotes/pacotes-aereos.html" class="mobile-nav-link" data-filter="aereo">Aéreo</a>
+                        <a href="../pacotes/pacotes-cruzeiro.html" class="mobile-nav-link"
+                            data-filter="maritimo">Cruzeiro</a>
+                    </div>
+                </li>
+                <li><a href="../index.html#sobre" class="mobile-nav-link">Sobre Nós</a></li>
+                <li><a href="../index.html#depoimentos" class="mobile-nav-link">Depoimentos</a></li>
+                <li><a href="./caldas-novas.html" class="mobile-nav-link">Caldas Novas</a></li>
+                <li><a href="https://wa.me/9999999999999" class="btn btn-primary mobile-nav-link" target="_blank">Fale
+                        Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="destination-hero"
+        style="background-image: url('../img/CaldasNovas.jpg');">
+        <div class="destination-hero-content">
+            <h1 class="destination-title">Caldas Novas</h1>
+            <p class="destination-subtitle"><i class="fas fa-map-marker-alt"></i> Goiás, Brasil</p>
+            <div class="destination-badges">
+                <span class="destination-badge"><i class="fas fa-fire"></i> Águas Termais</span>
+                <span class="destination-badge"><i class="fas fa-umbrella-beach"></i> Parque Aquático</span>
+                <span class="destination-badge"><i class="fas fa-heart"></i> Família</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Controle das Abas -->
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="destaques">Destino</button>
+            <button class="tab-btn" data-tab="informacoes">Informações</button>
+            <button class="tab-btn" data-tab="hoteis">Hotéis</button>
+            <button class="tab-btn" data-tab="datas">Datas</button>
+        </div>
+
+        <!-- Conteúdo das Abas -->
+        <div class="tab-content active" id="destaques">
+            <div class="about-container">
+                <h3>Sobre Caldas Novas</h3>
+                <p> <strong>Conhecida como o "Paraíso das Águas Quentes"</strong>, Caldas Novas é um dos destinos mais
+                    procurados pelos paulistas.<br>
+                    A cidade encanta turistas de todas as idades, oferecendo uma combinação perfeita de <strong>lazer,
+                        descanso e contato com a natureza</strong>.
+                </p>
+                <p>
+                    Suas <strong>águas termais</strong> podem atingir até <strong>37,5°C</strong> e são conhecidas por
+                    suas propriedades terapêuticas e medicinais.<br>
+                    Os <strong>hotéis, clubes e parques aquáticos</strong> da região proporcionam momentos únicos de
+                    relaxamento e diversão para toda a família.
+                </p>
+
+                <p>
+                    A <strong>A ViajeFacil</strong> oferece suporte especializado para hospedagens nos melhores hotéis
+                    da cidade,<br>
+                    com destaque para o <strong>Riviera Park</strong> e os renomados empreendimentos da rede
+                    <strong>diRoma</strong>, ideais para quem busca conforto, comodidade e uma excelente estrutura de
+                    lazer.
+                </p>
+                <p>
+                    <strong>Pronto para viajar?</strong> Entre em contato com a <strong>ViajeFacil</strong> e
+                    garanta seu pacote saindo de São Paulo para Caldas Novas com toda a praticidade e segurança que
+                    você merece!
+                </p>
+                </p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://passagenspromo.com.br/blog/wp-content/uploads/2020/08/o-que-fazer-em-caldas-novas.jpg"
+                            alt="Caldas Novas">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://www.shutterstock.com/image-photo/fantastic-aerial-view-rio-quente-600nw-2571898181.jpg"
+                            alt="Parque Aquático">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://centralcaldas.com.br/images/boulevard_inicio.webp" alt="Águas Termais">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Caldas_Novas_-_A%C3%A9rea.jpg"
+                            alt="Águas Termais">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba Informações -->
+        <div class="tab-content" id="informacoes">
+            <div class="about-container">
+                <h3>Incluso nos Pacotes</h3>
+                <ul class="package-inclusions">
+                    <li><i class="fas fa-bus"></i> Transporte em ônibus Com todo confort</li>
+                    <li><i class="fas fa-hotel"></i> Lanche a bordo na ida e volta</li>
+                </ul>
+                <br>
+
+                <h3 class="mt-4">Exclusivo para hóspedes do Grupo diRoma:</h3>
+                <ul class="package-inclusions">
+                    <li><i class="fas fa-umbrella-beach"></i> Acesso liberado no Di Roma Acqua Park</li>
+                    <li><i class="fas fa-glass-cheers"></i> Bebidas não alcóolicas e sobremesas inclusas</li>
+                </ul>
+                <br>
+
+                <h3 class="mt-4">Exclusivo para hóspedes do grupo Privé:</h3>
+                <ul class="package-inclusions">
+                    <li><i class="fas fa-umbrella-beach"></i> Acesso liberado no Walter Parque, Club Prive e Club Náutico e Kawanna</li>
+                    <li><i class="fas fa-glass-cheers"></i> Bebidas não alcóolicas e sobremesas inclusas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Aba Hotéis -->
+        <div class="tab-content" id="hoteis">
+            <div class="hotels-accordion">
+                <!-- Hotel 1 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3>Thermas diRoma</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/730af5fd6968457108a9ae3365313adf.jpg" alt="Thermas diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/844d373c90c6eeacf822589333248f39.jpg" alt="Thermas diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/53d17091a135c24eca5b99dfa9d6df79.jpg" alt="Thermas diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/b89b2ec47366323370c26772fef708a8.jpg" alt="Thermas diRoma">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>Thermas diRoma Hotel:</strong> Um dos maiores destaques do Grupo diRoma, o Thermas diRoma une conforto e lazer em um ambiente cercado por áreas verdes. São 333 apartamentos bem equipados, 15 piscinas termais (3 cobertas), 2 piscinas frias (1 semiolímpica), 4 ofurôs, saunas naturais, piscina infantil, toboáguas, 4 bares aquáticos e um moderno whirlpool. Ideal para famílias que buscam descanso e diversão em Caldas Novas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3>diRoma Exclusive</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/6e3f1fd1da44d55b6876702dffe9a584.png" alt="diRoma Exclusive">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/de17782d35f47facd0b1abc3696faf05.jpg" alt="diRoma Exclusive">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/716d31890a4f171cc8226cd5e63fd7bf.jpg" alt="diRoma Exclusive">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/7c657541998edc3bb42eaedf410e301b.jpg" alt="diRoma Exclusive">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>diRoma Exclusive:</strong> Localizado em uma das áreas mais nobres de Caldas Novas, o diRoma Exclusive oferece acomodações modernas e confortáveis, além de um parque aquático com piscinas termais, sauna e bar molhado. Ideal para famílias que buscam lazer e relaxamento em um ambiente sofisticado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 3 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3> Império Romano</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/1f71202343261232bcdbf872c3f8aaef.jpg" alt=" Império Romano">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/f04bf8f2452c74b2458d6ae6198ef932.jpg" alt=" Império Romano">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/dbc39f074dad06e291255374c423470c.png" alt=" Império Romano">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/a5a84f70c68442f2a523509481768f92.png" alt=" Império Romano">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>Império Romano:</strong> Um dos empreendimentos mais sofisticados do Grupo diRoma, o Império Romano oferece 217 apartamentos equipados com ar-condicionado, TV, frigobar e varanda. Sua área de lazer inclui 5 piscinas externas, piscina coberta, ofurôs, sauna, toboáguas e parquinho infantil. Os hóspedes também têm acesso gratuito ao Acqua Park diRoma durante toda a estadia, exceto no dia do check-out.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 4 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3> Piazza diRoma</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/9e09ebe72b15936beb7af21ed9d161f8.jpg" alt="Piazza diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/08f6170b891ee132e981cf33ee9e4b2b.jpg" alt="Piazza diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/0c555d4a103a80d610e0731c24a662a1.jpg" alt=" Piazza diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/7149a3a91a0a47320f6d2ddd551b6b6b.jpg" alt=" Piazza diRoma">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>Piazza diRoma:</strong> O mais novo empreendimento do Grupo diRoma, o Piazza diRoma oferece 228 apartamentos equipados com ar-condicionado, TV, frigobar, cofre, secador de cabelo e varanda. Sua área de lazer inclui piscina ao ar livre, sauna, hidromassagem, brinquedoteca, bar molhado, restaurante, lanchonete e copa da mamãe. Os hóspedes também têm acesso gratuito ao Acqua Park diRoma durante toda a estadia, exceto no dia do check-out.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 5 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3>Villas diRoma</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/a2e7ddfc4ba8b0420c6ad07cb392c098.jpg" alt="Villas diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/dbd52f00be92243d28542c5d3c32ac99.jpg" alt="Villas diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/3cb12602db87686bbd028f1f05f4ff7c.jpg" alt="Villas diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/4f1a2fc7292a498211e49a05e01da651.jpg" alt="Villas diRoma">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>Villas diRoma:</strong> Localizado a poucos passos do Acqua Park diRoma, o Villas diRoma oferece 217 apartamentos equipados com ar-condicionado, TV, frigobar, cofre e varanda. Sua área de lazer inclui 5 piscinas externas, piscina coberta, ofurôs, sauna, toboáguas e parquinho infantil. Os hóspedes também têm acesso gratuito ao Acqua Park diRoma durante toda a estadia, exceto no dia do check-out.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 6 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3> L'acqua diRoma</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/80cb699bf7841d1d93880a3b5d48ab0d.jpg" alt=" L'acqua diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/a18976c84c1a3601bcc87a45e81ecb0b.jpg" alt=" L'acqua diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/0990628e2ee6c7d9be237418565b6560.jpg" alt=" L'acqua diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/ca9a79a948c190ed3e588d06d61f5d33.jpg" alt=" L'acqua diRoma">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>L'acqua diRoma:</strong> Localizado na Chácara Roma, em Caldas Novas, o L'acqua diRoma é um dos maiores complexos hoteleiros do Grupo diRoma. Sua infraestrutura inclui 15 piscinas externas, sendo algumas com ondas e toboáguas, além de 8 piscinas internas. Os hóspedes têm acesso gratuito ao Jardins Acqua Park, com mais de 16.000 m² de lazer, que oferece brinquedoteca, sauna, academia, cinema e praça de alimentação. Os apartamentos são equipados com ar-condicionado, TV, frigobar e varanda, proporcionando conforto para toda a família.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 7 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3> diRoma Resort</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/266103a6e70bd0e6771b35991bbc22dd.jpg" alt=" diRoma Resort">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/45ac8c0ffb9cda70d92c7a8ce64f019e.jpg" alt=" diRoma Resort">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/72ce5477c2792bec71688c5bae10e59a.jpg" alt=" diRoma Resort">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/ea027e9f636328d7aaa405398168f9a7.jpg" alt=" diRoma Resort">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>diRoma Resort:</strong> Localizado no Jardins diRoma, em Caldas Novas, o diRoma Resort oferece 366 apartamentos equipados com ar-condicionado, TV, frigobar, cofre e varanda. Sua área de lazer inclui 3 piscinas externas, sendo 1 coberta, sauna, ofurôs, bar molhado e restaurante. Os hóspedes também têm acesso gratuito ao Acqua Park diRoma durante toda a estadia, exceto no dia do check-out.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 8 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3> Spazzio diRoma</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/1a844108f406234f8e365b53e6b71317.jpg" alt="  Spazzio diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/7ce57ba2b0483ddfafdfbb13879ae85a.jpg" alt=" Spazzio diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/f8d88a3ecfad4624e4dcbfb8325938b1.jpg" alt="  Spazzio diRoma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/c9e7838e1fba3068ec617a88ea61db5f.jpg" alt="  Spazzio diRoma">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>Spazzio diRoma:</strong> Localizado em Caldas Novas, o Spazzio diRoma oferece acomodações modernas e confortáveis, além de acesso gratuito ao Acqua Park diRoma. Sua infraestrutura inclui 3 piscinas externas, sendo uma com toboágua, sauna, ofurôs, restaurante, bar molhado e academia. Os apartamentos são equipados com ar-condicionado, TV, frigobar e varanda. Ideal para famílias que buscam lazer e relaxamento em um ambiente sofisticado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 9 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3>diRoma Fiori</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/219d6e3734e0e6b79107e5265bed9771.jpg" alt="diRoma Fiori">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/b675f6a9fd26d542cf0a1220dde5e525.jpg" alt="diRoma Fiori">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/12f1448dfa5e5ed6d45df96225572f74.png" alt=" diRoma Fiori">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/a1f84937dfa65cbe5142f3a9e1fe26ea.jpg" alt=" diRoma Fiori">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>diRoma Fiori:</strong> Localizado em Caldas Novas, o diRoma Fiori é um resort familiar que oferece 356 acomodações equipadas com ar-condicionado, TV, frigobar, telefone e varanda. Sua infraestrutura inclui 8 piscinas de águas termais, toboáguas, ofurôs, saunas, duchas, bar molhado, recreação monitorada, quadra de esportes, sala de jogos e brinquedoteca. Os hóspedes também têm acesso gratuito ao Acqua Park diRoma durante toda a estadia, exceto no dia do check-out.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 10 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3>Hotel Roma</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://diroma.com.br/fotos/f9d5904bda6073c90047b876c71518b9.jpg" alt="Hotel Roma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/9f640d8af08fd408e3ebae91a3b4a6b2.jpg" alt="Hotel Roma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/bc0402df7642289e960d511fb15d9ae3.jpg" alt=" Hotel Roma">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://diroma.com.br/fotos/5fb0384e12351b613b0aa6cb4c254b32.jpg" alt=" Hotel Roma">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>Hotel Roma:</strong> Localizado no centro de Caldas Novas, o Hotel Roma oferece acomodações práticas e confortáveis para quem busca lazer e descanso. Sua infraestrutura inclui piscina ao ar livre, sauna, ofurô e acesso gratuito ao Acqua Park diRoma durante toda a estadia, exceto no dia do check-out. Os quartos são equipados com ar-condicionado, TV, frigobar e varanda, proporcionando comodidade para toda a família.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 11 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3>Boulevard Suíte Hotel</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://wamhoteis.com.br/wp-content/uploads/2021/12/Banner-1-1920x500-12.png" alt="Boulevard Suíte Hotel">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://wamhoteis.com.br/wp-content/uploads/2021/12/Banner-2-1920x500-14.png" alt="Boulevard Suíte Hotel">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://wamhoteis.com.br/wp-content/uploads/2021/12/Banner-3-1920x500-13.png" alt="Boulevard Suíte Hotel">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>Boulevard Suíte Hotel:</strong> Localizado no coração de Caldas Novas, o Boulevard Suíte Hotel oferece acomodações confortáveis e uma infraestrutura completa para lazer e descanso. Com 7 piscinas, incluindo infantil e aquecida, 3 banheiras de hidromassagem, sauna, academia e salão de jogos, o hotel atende a todas as idades. Os hóspedes têm acesso gratuito aos parques aquáticos da rede Privé: Water Park, Clube Privé e Náutico Praia Clube. Além disso, dispõe de restaurante, bar, Wi-Fi gratuito e estacionamento privativo. Ideal para famílias que buscam diversão e conforto em um só lugar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 12 -->
+                <div class="hotel-accordion-item">
+                    <div class="hotel-accordion-header">
+                        <h3>Riviera Park Hotel</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="hotel-accordion-content">
+                        <div class="hotel-content-grid">
+                            <div class="hotel-images">
+                                <!-- Carrossel de imagens -->
+                                <div class="hotel-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://images.trvl-media.com/lodging/12000000/11930000/11928100/11928031/306c3db9.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Riviera Park Hotel">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://images.trvl-media.com/lodging/12000000/11930000/11928100/11928031/9f102e23.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Riviera Park Hotel">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://images.trvl-media.com/lodging/12000000/11930000/11928100/11928031/898eba64.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Riviera Park Hotel">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://images.trvl-media.com/lodging/12000000/11930000/11928100/11928031/44aca72a.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Riviera Park Hotel">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotel-info">
+                                <p><strong>Riviera Park Hotel:</strong> Localizado no coração de Caldas Novas, o Riviera Park Hotel é considerado o maior hotel de águas termais do Brasil, com 780 apartamentos. Sua infraestrutura inclui 10 piscinas externas, sendo uma coberta, parque aquático infantil, sauna, ofurôs, academia e centro de convenções para até 500 pessoas. Os hóspedes têm acesso gratuito ao Water Park, Clube Privé e Náutico Praia Clube durante toda a estadia, exceto no dia do check-out. Ideal para famílias que buscam lazer, conforto e conveniência em um só lugar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+                
+                
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="tab-content" id="datas">
+            <div class="date-options-container">
+                <!-- Grupo Junho 2025 -->
+                <div class="month-header">
+                    <h3>Junho 2025</h3>
+                </div>
+                <div class="container-data">
+                    <div class="date-group">
+                        <div class="date-group">
+                            <div class="date-option unavailable" data-departure="2025-06-05" data-return="2025-06-10"
+                                >
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">05</span>
+                                        <span class="date-month">Jun</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">10</span>
+                                        <span class="date-month">Jun</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option unavailable" data-departure="2025-06-11" data-return="2025-06-18"
+                                >
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">11</span>
+                                        <span class="date-month">Jun</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">18</span>
+                                        <span class="date-month">Jun</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                        <div class="date-group">
+                            <div class="date-option" data-departure="2025-06-20" data-return="2025-06-25"
+                                data-price="1500">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">20</span>
+                                        <span class="date-month">Jun</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">25</span>
+                                        <span class="date-month">Jun</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">Hotel Prive Boulevard</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-06-26" data-return="2025-07-01"
+                                data-price="1210">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">26</span>
+                                        <span class="date-month">Jun</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">01</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-container">
+                        <div class="price-display">Selecione uma data para ver o preço</div>
+                        <a href="https://wa.me/999999999999" class="whatsapp-btn" target="_blank"
+                            id="whatsapp-reservation-btn">
+                            <i class="fab fa-whatsapp"></i> Saiba Mais
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Grupo Julho 2025 -->
+                <div class="month-header">
+                    <h3>Julho 2025</h3>
+                </div>
+                <div class="container-data">
+                    <div class="date-group">
+                        <div class="date-group">
+                            <div class="date-option" data-departure="2025-07-02" data-return="2025-07-08"
+                                data-price="1500">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">02</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">08</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-07-10" data-return="2025-07-19"
+                                data-price="1350">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">10</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">19</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                        <div class="date-group">
+                            <div class="date-option" data-departure="2025-07-21" data-return="2025-07-25"
+                                data-price="1200">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">21</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">25</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">Hotel Riviera</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-07-26" data-return="2025-07-29"
+                                data-price="950">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">26</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">29</span>
+                                        <span class="date-month">Jul</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-container">
+                        <div class="price-display">Selecione uma data para ver o preço</div>
+                        <a href="https://wa.me/999999999999" class="whatsapp-btn" target="_blank"
+                            id="whatsapp-reservation-btn">
+                            <i class="fab fa-whatsapp"></i> Saiba Mais
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Grupo Agosto 2025 -->
+                <!-- Grupo Agosto 2025 -->
+                <div class="month-group">
+                    <div class="month-header">
+                        <h3>Agosto 2025</h3>
+                    </div>
+                    <div class="container-data">
+                        <div class="date-group">
+                            <div class="date-option" data-departure="2025-08-18" data-return="2025-08-24"
+                                data-price="1670">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">18</span>
+                                        <span class="date-month">Ago</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">24</span>
+                                        <span class="date-month">Ago</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                        <div class="cta-container">
+                            <div class="price-display">Selecione uma data para ver o preço</div>
+                            <a href="https://wa.me/999999999999" class="whatsapp-btn" target="_blank"
+                                id="whatsapp-reservation-btn">
+                                <i class="fab fa-whatsapp"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grupo Setembro 2025 -->
+                <div class="month-group">
+                    <div class="month-header">
+                        <h3>Setembro 2025</h3>
+                    </div>
+                    <div class="container-data">
+                        <div class="date-group">
+                            <div class="date-option" data-departure="2025-09-05" data-return="2025-09-11"
+                                data-price="1550">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">05</span>
+                                        <span class="date-month">Set</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">11</span>
+                                        <span class="date-month">Set</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-09-12" data-return="2025-09-18"
+                                data-price="1600">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">12</span>
+                                        <span class="date-month">Set</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">18</span>
+                                        <span class="date-month">Set</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                        <div class="cta-container">
+                            <div class="price-display">Selecione uma data para ver o preço</div>
+                            <a href="https://wa.me/999999999999" class="whatsapp-btn" target="_blank"
+                                id="whatsapp-reservation-btn">
+                                <i class="fab fa-whatsapp"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grupo Outubro 2025 -->
+                <div class="month-group">
+                    <div class="month-header">
+                        <h3>Outubro 2025</h3>
+                    </div>
+                    <div class="container-data">
+                        <div class="date-group">
+                            <div class="date-option" data-departure="2025-10-10" data-return="2025-10-14"
+                                data-price="1120">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">10</span>
+                                        <span class="date-month">Out</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">14</span>
+                                        <span class="date-month">Out</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-10-15" data-return="2025-10-20"
+                                data-price="1320">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">15</span>
+                                        <span class="date-month">Out</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">20</span>
+                                        <span class="date-month">Out</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-10-23" data-return="2025-10-27"
+                                data-price="1200">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">23</span>
+                                        <span class="date-month">Out</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">27</span>
+                                        <span class="date-month">Out</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-10-28" data-return="2025-10-30"
+                                data-price="650">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">28</span>
+                                        <span class="date-month">Out</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">30</span>
+                                        <span class="date-month">Out</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                        <div class="cta-container">
+                            <div class="price-display">Selecione uma data para ver o preço</div>
+                            <a href="https://wa.me/999999999999" class="whatsapp-btn" target="_blank"
+                                id="whatsapp-reservation-btn">
+                                <i class="fab fa-whatsapp"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grupo Novembro 2025 -->
+                <div class="month-group">
+                    <div class="month-header">
+                        <h3>Novembro 2025</h3>
+                    </div>
+                    <div class="container-data">
+                        <div class="date-group">
+                            <div class="date-option" data-departure="2025-11-06" data-return="2025-11-10"
+                                data-price="850">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">06</span>
+                                        <span class="date-month">Nov</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">10</span>
+                                        <span class="date-month">Nov</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-11-13" data-return="2025-11-19"
+                                data-price="1420">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">13</span>
+                                        <span class="date-month">Nov</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">19</span>
+                                        <span class="date-month">Nov</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-11-21" data-return="2025-11-27"
+                                data-price="1600">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">21</span>
+                                        <span class="date-month">Nov</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">27</span>
+                                        <span class="date-month">Nov</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                        <div class="cta-container">
+                            <div class="price-display">Selecione uma data para ver o preço</div>
+                            <a href="https://wa.me/999999999999" class="whatsapp-btn" target="_blank"
+                                id="whatsapp-reservation-btn">
+                                <i class="fab fa-whatsapp"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grupo Dezembro 2025 -->
+                <div class="month-group">
+                    <div class="month-header">
+                        <h3>Dezembro 2025</h3>
+                    </div>
+                    <div class="container-data">
+                        <div class="date-group">
+                            <div class="date-option" data-departure="2025-12-04" data-return="2025-12-09"
+                                data-price="950">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">04</span>
+                                        <span class="date-month">Dez</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">09</span>
+                                        <span class="date-month">Dez</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                            <div class="date-option" data-departure="2025-12-10" data-return="2025-12-18"
+                                data-price="2300">
+                                <div class="date-info">
+                                    <div class="date-part">
+                                        <span class="date-day">10</span>
+                                        <span class="date-month">Dez</span>
+                                        <span class="date-label">Ida</span>
+                                    </div>
+                                    <div class="date-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="date-part">
+                                        <span class="date-day">18</span>
+                                        <span class="date-month">Dez</span>
+                                        <span class="date-label">Volta</span>
+                                    </div>
+                                </div>
+                                <div class="hotel-name">EXCLUSIVE Di Roma</div>
+                            </div>
+                        </div>
+                        <div class="cta-container">
+                            <div class="price-display">Selecione uma data para ver o preço</div>
+                            <a href="https://wa.me/999999999999" class="whatsapp-btn" target="_blank"
+                                id="whatsapp-reservation-btn">
+                                <i class="fab fa-whatsapp"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../img/ChatGPT Image 18_06_2025, 21_53_52.png" alt="ViajeFácil" class="logo-img">
+                    <p>Transformando sonhos em destinos desde 2007.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/joao_jzo" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/999999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#destinos">Destinos</a></li>
+                        <li><a href="../index.html#sobre">Sobre Nós</a></li>
+                        <li><a href="../index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> 999999999999</p>
+                    <p><i class="fas fa-whatsapp"></i> 9999999999999</p>
+                    <p><i class="fas fa-envelope"></i> contato@ViajeFácil.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 . ViajeFácil Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Fixo do WhatsApp -->
+    <a href="https://wa.me/999999999999" class="whatsapp-fixed" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="destinations.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+
+</html>

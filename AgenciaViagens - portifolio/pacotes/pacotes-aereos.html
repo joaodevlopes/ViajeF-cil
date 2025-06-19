@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-page-type="aereo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ViajeFácil - Pacotes aéreos nacionais e internacionais. Encontre os melhores preços para sua viagem.">
+
+    <meta name="keywords" content="pacotes aéreos, passagens aéreas, viagens de avião, pacotes turísticos aéreos">
+
+    <title>ViajeFácil | Pacotes Aéreos</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./pacotes.css">
+    <link rel="icon" type="image/png" href="../img/ChatGPT Image 18_06_2025, 21_53_52.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="preload">
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../img/ChatGPT Image 18_06_2025, 21_53_52.png" alt="ViajeFácil" class="logo-img">
+            </a>
+
+            <nav id="desktop-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="./pacotes-aereos.html">Pacotes turísticos <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="./pacotes-aereos.html" data-filter="aereo"> Aéreo</a>
+                            <a href="./pacotes-cruzeiro.html" data-filter="cruzeiro">Cruzeiro</a>
+                            <a href="./pacotes-rodoviarios.html" data-filter="rodoviarios">Rodoviário</a>
+                        </div>
+                    </li>
+
+                    <li><a href="../index.html">Sobre Nós</a></li>
+                    <li><a href="../index.html">Depoimentos</a></li>
+                    <li><a href="../destinos/caldas-novas.html">Caldas Novas</a></li>
+                </ul>
+                <a href="../index.html" class="btn btn-primary">Fale Conosco</a>
+            </nav>
+
+            <button id="mobile-menu-btn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <nav id="mobile-nav">
+            <ul>
+                <li class="dropdown">
+                    <a href="./pacotes-aereos.html" class="mobile-nav-link">Pacotes turísticos</a>
+                    <div class="dropdown-menu">
+                        <a href="pacotes-rodoviarios.html" class="mobile-nav-link"
+                            data-filter="rodoviario">Rodoviário</a>
+                        <a href="pacotes-aereos.html" class="mobile-nav-link" data-filter="aereo">Aéreo</a>
+                        <a href="./pacotes-cruzeiro.html" class="mobile-nav-link" data-filter="maritimo">Marítimo</a>
+                    </div>
+                </li>
+                <li><a href="../index.html" class="mobile-nav-link">Sobre Nós</a></li>
+                <li><a href="../index.html" class="mobile-nav-link">Depoimentos</a></li>
+                <li><a href="../destinos/caldas-novas.html" class="mobile-nav-link">Caldas Novas</a></li>
+                <li><a href="../index.html" class="btn btn-primary mobile-nav-link">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="section-hero-pacotes">
+            <div class="container">
+                <h1>Pacotes Aéreos</h1>
+                <p>Descubra destinos incríveis com os melhores preços em passagens aéreas</p>
+            </div>
+        </section>
+
+        <!-- Pacotes Section -->
+        <section id="pacotes" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Pacotes Aéreos</h2>
+                    <p>Confira nossas opções de viagens aéreas nacionais e internacionais</p>
+                </div>
+
+                <div class="pacotes-grid">
+                    <!-- Pacote 1-->
+                    <div class="pacote-card">
+                        <div class="pacote-image">
+                            <img src="/img/SantiagoIMG.PNG"
+                                alt="Santiago, Chile">
+                            <div class="pacote-tag">Internacional</div>
+                        </div>
+                        <div class="pacote-content">
+                            <h3>Santiago</h3>
+                            <div class="pacote-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Santiago, Chile</span>
+                            </div>
+                            <p class="pacote-description">Uma cidade vibrante cercada pela imponência da Cordilheira dos
+                                Andes! Aproveite vinícolas premiadas, cultura rica e gastronomia sofisticada.</p>
+                            <div class="pacote-price">
+                                <span>A partir de 12x de</span>
+                                <strong>R$ 320,00</strong>
+                                <span>por pessoa</span>
+                            </div>
+                            <button class="btn btn-primary btn-saiba-mais open-modal-btn" 
+                                    data-destination="Santiago, Chile" 
+                                    data-price="3840">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Pacote 2-->
+                    <div class="pacote-card">
+                        <div class="pacote-image">
+                            <img src="/img/GramadoImg.PNG"
+                                alt="Gramado ">
+                        </div>
+                        <div class="pacote-content">
+                            <h3>Gramado</h3>
+                            <div class="pacote-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Gramado, Rio Grande do Sul</span>
+                            </div>
+                            <p class="pacote-description">Encante-se com paisagens europeias, gastronomia deliciosa e atrações imperdíveis em qualquer estação do ano. Reserve agora e viva momentos inesquecíveis na Serra Gaúcha!</p>
+                            <div class="pacote-price">
+                                <span>A partir de 10X de </span>
+                                <strong>R$ 232,20</strong>
+                                <span>por pessoa</span>
+                            </div>
+                            <button class="btn btn-primary btn-saiba-mais open-modal-btn" 
+                                    data-destination="Gramado, Rio Grande do Sul" 
+                                    data-price="2786.40">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Pacote 3-->
+                    <div class="pacote-card">
+                        <div class="pacote-image">
+                            <img src="../img/Portoseguroimg.jpg"
+                                alt="Porto Seguro ">
+                        </div>
+                        <div class="pacote-content">
+                            <h3>Porto Seguro</h3>
+                            <div class="pacote-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Seguro, Bahia</span>
+                            </div>
+                            <p class="pacote-description"> O destino ideal para quem busca sol, história e diversão! Encante-se com as praias paradisíacas, mergulhe na cultura local e viva experiências inesquecíveis na Costa do Descobrimento. Reserve agora e embarque nessa aventura baiana!</p>
+                            <div class="pacote-price">
+                                <span>A partir de 12X de </span>
+                                <strong>R$ 140,00</strong>
+                                <span>por pessoa</span>
+                            </div>
+                            <button class="btn btn-primary btn-saiba-mais open-modal-btn" 
+                                    data-destination="Porto Seguro, Bahia" 
+                                    data-price="1680">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Pacote 4-->
+                    <div class="pacote-card">
+                        <div class="pacote-image">
+                            <img src="/img/NatalIMG.PNG"
+                                alt="Natal">
+                        </div>
+                        <div class="pacote-content">
+                            <h3>Natal</h3>
+                            <div class="pacote-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Natal, Rio Grande do Norte</span>
+                            </div>
+                            <p class="pacote-description"> Um paraíso de dunas, praias deslumbrantes e sol o ano inteiro! Explore paisagens incríveis, saboreie a gastronomia potiguar e aproveite passeios emocionantes. Reserve sua viagem e descubra o melhor do Nordeste brasileiro!</p>
+                            <div class="pacote-price">
+                                <span>A partir de 10X de </span>
+                                <strong>R$ 150,12</strong>
+                                <span>por pessoa</span>
+                            </div>
+                            <button class="btn btn-primary btn-saiba-mais open-modal-btn" 
+                                    data-destination="Natal, Rio Grande do Norte" 
+                                    data-price="1800">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Pacote 5-->
+                    <div class="pacote-card">
+                        <div class="pacote-image">
+                            <img src="/img/FortalezaIMG.PNG"
+                                alt="Fortaleza">
+                        </div>
+                        <div class="pacote-content">
+                            <h3>Fortaleza</h3>
+                            <div class="pacote-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Fortaleza, Ceará</span>
+                            </div>
+                            <p class="pacote-description"> Um paraíso de praias incríveis, cultura vibrante e sol o ano inteiro! Curta as belezas naturais de Fortaleza, mergulhe em águas mornas, descubra a rica história cearense e aproveite passeios emocionantes. Reserve sua viagem e viva o melhor do Nordeste brasileiro!</p>
+                            <div class="pacote-price">
+                                <span>A partir de 14X de </span>
+                                <strong>R$ 108,15</strong>
+                                <span>por pessoa</span>
+                            </div>
+                            <button class="btn btn-primary btn-saiba-mais open-modal-btn" 
+                                    data-destination="Fortaleza, Ceará" 
+                                    data-price="1514.1">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Pacote 6-->
+                    <div class="pacote-card">
+                        <div class="pacote-image">
+                            <img src="/img/maceioIMG.PNG"
+                                alt="Maceió">
+                        </div>
+                        <div class="pacote-content">
+                            <h3>Maceió</h3>
+                            <div class="pacote-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Maceió, Alagoas</span>
+                            </div>
+                            <p class="pacote-description">Um refúgio de águas cristalinas, praias deslumbrantes e clima tropical o ano inteiro! Explore piscinas naturais, aprecie a deliciosa culinária alagoana e viva momentos únicos à beira-mar. Reserve sua viagem e descubra o encanto de Maceió no coração do Nordeste!</p>
+                            <div class="pacote-price">
+                                <span>A partir de 15X de </span>
+                                <strong>R$ 108,32</strong>
+                                <span>por pessoa</span>
+                            </div>
+                            <button class="btn btn-primary btn-saiba-mais open-modal-btn" 
+                                    data-destination="Maceió, Alagoas" 
+                                    data-price="1624,8">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Pacote 7-->
+                    <div class="pacote-card">
+                        <div class="pacote-image">
+                            <img src="/img/PortodegalinhasIMG.PNG"
+                                alt="Porto Galinhas">
+                        </div>
+                        <div class="pacote-content">
+                            <h3>Porto Galinhas</h3>
+                            <div class="pacote-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Porto Galinhas, Pernambuco</span>
+                            </div>
+                            <p class="pacote-description">Um paraíso natural que vai transformar sua viagem! Maravilhe-se com as impressionantes Cataratas, descubra a energia da Usina de Itaipu e viva aventuras únicas na tríplice fronteira. Garanta já sua experiência inesquecível!</p>
+                            <div class="pacote-price">
+                                <span>A partir de 13X de </span>
+                                <strong>R$ 105,48</strong>
+                                <span>por pessoa</span>
+                            </div>
+                            <button class="btn btn-primary btn-saiba-mais open-modal-btn" 
+                                    data-destination="Porto Galinhas, Pernambuco" 
+                                    data-price="1371,24">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../img/ChatGPT Image 18_06_2025, 21_53_52.png" alt="ViajeFacil" class="logo-img">
+                    <p>Transformando sonhos em destinos desde 2007.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/joao_jzo" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/999999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./pacotes-aereos.html">Pacotes Aéreos</a></li>
+                        <li><a href="../index.html#sobre">Sobre Nós</a></li>
+                        <li><a href="../index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> 999999999999</p>
+                    <p><i class="fas fa-whatsapp"></i> 999999999999</p>
+                    <p><i class="fas fa-envelope"></i> contato@ViajeFácil.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Viaje Fácil . Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/999999999999" target="_blank" class="whatsapp-fixed">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Destination Modal -->
+    <div id="destination-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h3 id="modal-title">Título do Destino</h3>
+                    <p id="modal-price" class="modal-price">R$ 0,00</p>
+                </div>
+                <div id="modal-details" class="modal-details"></div>
+
+                <form id="modal-form" class="modal-form">
+                    <div class="form-group">
+                        <label for="modal-name">Nome Completo</label>
+                        <input type="text" id="modal-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-email">E-mail</label>
+                        <input type="email" id="modal-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-phone">Telefone</label>
+                        <input type="tel" id="modal-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-people">Número de Pessoas</label>
+                        <select id="modal-people" name="people" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4">4 pessoas</option>
+                            <option value="5+">5 ou mais pessoas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-message">Mensagem</label>
+                        <textarea id="modal-message" name="message" rows="3"
+                            placeholder="Informações adicionais sobre sua viagem"></textarea>
+                    </div>
+                    <input type="hidden" id="modal-destination" name="destination">
+                    <button type="submit" class="btn btn-primary btn-block">Solicitar Informações</button>
+                </form>
+                <div id="modal-success" class="modal-success">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Solicitação Enviada!</h3>
+                    <p>Agradecemos seu interesse. Entraremos em contato em breve com mais informações sobre este pacote.
+                    </p>
+                    <button class="btn btn-primary" id="modal-back-btn">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="pacotes.js"></script>
+    
+</body>
+
+</html>

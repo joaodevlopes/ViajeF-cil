@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Viaje Fácil - Agência de viagens em São Paulo (SP). Encontre os melhores pacotes de viagens nacionais e internacionais.">
+
+    <meta name="keywords" content="agência de viagens, pacotes de viagens, viaje facil, São Paulo, turismo">
+
+    <title>ViajeFácil | Agência de Viagens em São Paulo</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/ChatGPT Image 18_06_2025, 21_53_52.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="preload">
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="img/ChatGPT Image 18_06_2025, 21_53_52.png" alt="Viaje Fácil" class="logo-img">
+            </a>
+
+            <nav id="desktop-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#home">Pacotes turísticos <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="./pacotes/pacotes-aereos.html" data-filter="aereo"> Aéreo</a>
+                            <a href="./pacotes/pacotes-cruzeiro.html" data-filter="cruzeiro">Cruzeiro</a>
+                            <a href="./pacotes/pacotes-rodoviarios.html" data-filter="rodoviarios">Rodoviário</a>
+                        </div>
+                    </li>
+
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="./destinos/caldas-novas.html">Destino em Destaque</a></li>
+                </ul>
+                <a href="#contato" class="btn btn-primary">Fale Conosco</a>
+            </nav>
+
+            <button id="mobile-menu-btn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <nav id="mobile-nav">
+            <button id="mobile-close-btn" class="mobile-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="mobile-nav-link">Pacotes turísticos</a>
+                    <div class="dropdown-menu">
+                        <a href="./pacotes/pacotes-rodoviarios.html" class="mobile-nav-link"
+                            data-filter="rodoviario">Rodoviário</a>
+                        <a href="./pacotes/pacotes-aereos.html" class="mobile-nav-link" data-filter="aereo">Aéreo</a>
+                        <a href="./pacotes/pacotes-cruzeiro.html" class="mobile-nav-link"
+                            data-filter="maritimo">Marítimo</a>
+                    </div>
+                </li>
+                <li><a href="#sobre" class="mobile-nav-link">Sobre Nós</a></li>
+                <li><a href="#depoimentos" class="mobile-nav-link">Depoimentos</a></li>
+                <li><a href="destinos/caldas-novas.html" class="mobile-nav-link">Destino em Destaque</a></li>
+                <li><a href="#contato" class="btn btn-primary mobile-nav-link">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-slider">
+                <div class="slide-container">
+                    <!-- slides coloquei no javascript! -->
+                </div>
+                <button class="slider-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="slider-dots">
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Destinos Populares</h2>
+                    <p>Conheça nossos pacotes mais procurados e comece a planejar sua próxima viagem</p>
+                </div>
+
+                <div class="destination-filters">
+                    <button class="filter-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-btn" data-filter="nacionais">Nacionais</button>
+                    <button class="filter-btn" data-filter="internacionais">Internacionais</button>
+                    <button class="filter-btn" data-filter="promocoes">Promoções</button>
+                </div>
+
+                <div class="destinations-grid">
+                    <!-- cards feitos no javascript-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de sobre -->
+        <section id="sobre" class="section about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="section-header">
+                            <h2>Sobre a Viaje Fácil</h2>
+                            <p>Criando experiências únicas e inesquecíveis desde 2007</p>
+                        </div>
+                        <p>Somos uma agência de viagens especializada em proporcionar experiências únicas para nossos
+                            clientes. Localizada em São Paulo (SP), a Viaje Fácil nasceu do sonho de
+                            transformar viagens em memórias inesquecíveis.</p>
+                        <p>Nossa equipe é composta por profissionais apaixonados por viagens e com ampla experiência no
+                            mercado turístico. Trabalhamos com os melhores fornecedores e parceiros para garantir
+                            qualidade, segurança e o melhor custo-benefício em todos os nossos pacotes.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Atendimento personalizado</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Parceiros confiáveis</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Suporte durante toda a viagem</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Melhores preços do mercado</span>
+                            </div>
+                        </div>
+                        <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/sobre_img.jpg" alt="Equipe ViajeFácil" class="team-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="depoimentos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O que dizem nossos clientes</h2>
+                    <p>Veja as experiências e avaliações de quem já viajou conosco</p>
+                </div>
+
+                <div class="testimonial-slider">
+                    <div class="testimonial-container">
+                        <!-- no javascript -->
+                    </div>
+                    <button class="slider-btn prev testimonial-prev" aria-label="Anterior"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next testimonial-next" aria-label="Próximo"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                    <div class="testimonial-dots">
+                        <!-- Dots will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entre em Contato</h2>
+                    <p>Estamos prontos para ajudar a planejar sua próxima viagem</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Selecione um assunto</option>
+                                    <option value="pacotes">Informações sobre pacotes</option>
+                                    <option value="reserva">Fazer uma reserva</option>
+                                    <option value="cancelamento">Cancelamento</option>
+                                    <option value="outros">Outros assuntos</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                        </form>
+                        <div id="form-success" class="form-success">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <h3>Mensagem Enviada!</h3>
+                            <p>Agradecemos seu contato. Retornaremos em breve.</p>
+                            <button class="btn btn-primary" id="back-btn">Voltar</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Endereços</h4>
+                                <p>ViajeFacil - São Paulo: Zona Central de São Paulo, CEP:
+                                    01037-010
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>99 9999-9999</p>
+                                <p>99 9999-9999</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta: 08 às 19h<br>Sábado: 9h às 15h <br>Domingo: Fechado</p>
+
+                            </div>
+                        </div>
+
+                        <div class="whatsapp-contact">
+                            <a href="https://wa.me/" target="_blank" class="btn btn-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Fale pelo WhatsApp
+                            </a>
+                        </div>
+
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29261.219889980468!2d-46.65893262247064!3d-23.5449982938788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5853d96a1441%3A0xebba5cad95ff31bb!2sZona%20Central%20de%20S%C3%A3o%20Paulo%20-%20Rep%C3%BAblica%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001037-010!5e0!3m2!1spt-PT!2sbr!4v1750278534482!5m2!1spt-PT!2sbr"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/ChatGPT Image 18_06_2025, 21_53_52.png" alt="Viaje facil" class="logo-img">
+                    <p>Transformando sonhos em destinos desde 2007.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/joao_jzo" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#destinos">Destinos</a></li>
+                        <li><a href="../index.html#sobre">Sobre Nós</a></li>
+                        <li><a href="../index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> 99 9999-9999</p>
+                    <p><i class="fas fa-whatsapp"></i> 99 9999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@viajeFacil.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 viajeFacil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/999999999999" target="_blank" class="whatsapp-fixed">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Destination Modal -->
+    <div id="destination-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h3 id="modal-title">Título do Destino</h3>
+                    <p id="modal-price" class="modal-price">R$ 0,00</p>
+                </div>
+                <div id="modal-details" class="modal-details"></div>
+
+                <form id="modal-form" class="modal-form">
+                    <div class="form-group">
+                        <label for="modal-name">Nome Completo</label>
+                        <input type="text" id="modal-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-email">E-mail</label>
+                        <input type="email" id="modal-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-phone">Telefone</label>
+                        <input type="tel" id="modal-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-people">Número de Pessoas</label>
+                        <select id="modal-people" name="people" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4">4 pessoas</option>
+                            <option value="5+">5 ou mais pessoas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-message">Mensagem</label>
+                        <textarea id="modal-message" name="message" rows="3"
+                            placeholder="Informações adicionais sobre sua viagem"></textarea>
+                    </div>
+                    <input type="hidden" id="modal-destination" name="destination">
+                    <button type="submit" class="btn btn-primary btn-block">Solicitar Informações</button>
+                </form>
+                <div id="modal-success" class="modal-success">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Solicitação Enviada!</h3>
+                    <p>Agradecemos seu interesse. Entraremos em contato em breve com mais informações sobre este pacote.
+                    </p>
+                    <button class="btn btn-primary" id="modal-back-btn">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

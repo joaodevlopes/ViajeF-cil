@@ -1,0 +1,1074 @@
+/* ==================================================
+MOBILE NAV - NAV MOBILE
+================================================== */
+body {
+    padding-top: 80px;
+}
+
+/* Ajuste para o menu mobile */
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: var(--shadow-lg);
+    z-index: 1001;
+    padding: 2rem;
+    transition: var(--transition);
+    overflow-y: auto;
+}
+
+#mobile-nav.active {
+    right: 0;
+}
+/* ==================================================
+HERO - Banner principal do destino
+================================================== */
+.destination-hero {
+    height: 50vh;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position:center center;
+    margin-bottom: 4rem;
+    padding-top: 70px;
+}
+
+.destination-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+}
+
+.destination-hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    padding: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.destination-title {
+    white-space: normal;
+    text-align: center;
+    font-size: clamp(1.8rem, 8vw, 4rem);
+    line-height: 1.2;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    animation: fadeInDown 1s ease-out;
+    word-break: break-word;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.destination-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.destination-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.destination-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(5px);
+}
+
+/* ==================================================
+TABS - Abas de navegação de conteúdo
+================================================== */
+.tabs-container {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1.5rem;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--gray-light);
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 0.8rem 1.5rem;
+    background: none;
+    border: none;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--gray-dark);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.tab-btn.active:after {
+    transform: scaleX(1);
+}
+
+.tab-btn:hover:not(.active) {
+    color: var(--primary);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ==================================================
+SOBRE - Container de apresentação sobre o destino
+================================================== */
+.about-container {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-container h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.about-container p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+
+/* ==================================================
+GALERIA - Imagens do destino
+================================================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    border-radius: var(--radius);
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* ==================================================
+HOTÉIS - Acordeões com informações dos hotéis
+================================================== */
+.hotels-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hotel-accordion-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.hotel-images {
+    height: 200px;
+}
+
+
+
+.hotel-accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray-light);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.hotel-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--gray-light);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.hotel-accordion-header:hover {
+    background: rgba(49, 101, 177, 0.05);
+}
+
+.hotel-accordion-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.hotel-accordion-header .rating {
+    color: var(--warning);
+    font-weight: 600;
+}
+
+.hotel-accordion-header i {
+    transition: transform 0.3s ease;
+}
+
+.hotel-accordion-item.active .hotel-accordion-header i {
+    transform: rotate(180deg);
+}
+
+.hotel-accordion-content {
+    display: none;
+    padding: 1.5rem;
+    background: white;
+}
+
+.hotel-accordion-item.active .hotel-accordion-content {
+    display: block;
+}
+
+.hotel-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.hotel-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-info p {
+    margin-bottom: 1.5rem;
+}
+
+.hotel-carousel {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.carousel-inner {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+
+
+/* ==================================================
+DATAS - Seleção de datas de ida e volta
+================================================== */
+.date-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.date-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+
+.date-option {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: var(--radius);
+    padding: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.date-option:hover {
+    border-color: var(--primary);
+}
+
+.date-option.selected {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: scale(1.03);
+    box-shadow: var(--shadow-md);
+}
+
+.date-option:hover:not(.selected) {
+    border-color: var(--primary);
+}
+
+.date-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.date-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.date-day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--primary);
+}
+
+.date-month {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--gray-dark);
+}
+
+
+.date-year {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 0.2rem;
+}
+
+.date-label {
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin-top: 0.3rem;
+}
+
+.date-option.selected .date-label {
+    opacity: 0.9;
+}
+
+.date-arrow {
+    font-size: 1.2rem;
+    color: var(--gray);
+    padding: 0 1rem;
+}
+
+.date-option.selected .date-arrow {
+    color: white;
+}
+
+.hotel-name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--primary-dark);
+    border-top: 1px dashed var(--gray-light);
+    padding-top: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.date-option.selected {
+    background: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(49, 101, 177, 0.2);
+}
+
+.date-option.selected .date-day,
+.date-option.selected .date-month,
+.date-option.selected .date-arrow,
+.date-option.selected .hotel-name {
+    color: white;
+}
+
+.date-option.selected .date-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.date-option.selected .hotel-name {
+    color: white;
+}
+
+/* Badge de ano */
+.year-badge {
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1.5rem;
+    background: rgba(49, 101, 177, 0.1);
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.month-header {
+    margin: 1.5rem 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+    width: 100%;
+}
+
+.month-group {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.month-header h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.container-data{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Estilo para datas indisponíveis */
+.date-option.unavailable {
+    opacity: 0.6;
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.date-option.unavailable::after {
+    content: "Indisponível";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--danger);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.date-option.unavailable .date-day,
+.date-option.unavailable .date-month,
+.date-option.unavailable .date-label,
+.date-option.unavailable .hotel-name {
+    color: var(--gray) !important;
+}
+
+.date-option.unavailable:hover {
+    border-color: var(--gray-light) !important;
+    transform: none !important;
+}
+
+.date-option.unavailable.selected {
+    background-color: #f8f9fa !important;
+}
+
+/* ==================================================
+WHATSAPP - Botão de reserva via WhatsApp
+================================================== */
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.price-display {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--primary);
+    min-height: 2.5rem; /* Garante espaço mesmo quando vazio */
+}
+
+.price-display strong {
+    font-size: 1.4rem;
+    color: var(--primary-dark);
+}
+
+.cta-container {
+    max-width: 300px;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+/* Botão principal */
+.cta-container .whatsapp-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    color: white;
+    background-color: #25d366;
+    border-radius: 20px;
+}
+
+/* Botão secundário */
+.cta-container .whatsapp-btn-light {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+/* Texto acima do botão secundário */
+.cta-container p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.package-cta, .contact-info {
+    max-width: 300px;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.package-cta .whatsapp-btn,
+.contact-info .whatsapp-btn-light {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #25d366;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+    background: #128c7e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+.whatsapp-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-pulse {
+    animation: pulse 2s infinite;
+}
+
+.btn-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* ==================================================
+RESPONSIVO
+================================================== */
+@media (max-width: 992px) {
+    #mobile-menu-btn {
+        display: block;
+    }
+    
+    #desktop-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        padding-top: 80px;
+    }
+    
+    #desktop-nav.show {
+        left: 0;
+    }
+    
+    #desktop-nav.mobile-visible {
+        transform: translateY(0);
+    }
+    
+    #desktop-nav ul {
+        flex-direction: column;
+    }
+
+    
+}
+
+
+@media (max-width: 768px) {
+    .destination-title {
+        font-size: 2rem;
+    }
+
+    .destination-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hotel-content-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .hotel-content-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .date-options-container {
+        grid-template-columns: 1fr;
+    }
+
+    .date-group {
+        max-width: 100%;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+    
+    .date-option {
+        min-width: 100%;
+        padding: 0.8rem;
+    }
+
+    .cta-container {
+        max-width: 350px;
+    }
+    
+    .cta-container .whatsapp-btn {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .package-cta, .contact-info {
+        max-width: 350px;
+    }
+
+    .about-container {
+        padding: 1rem;
+    }
+    
+    .about-container p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .hotel-content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hotel-images {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hotel-content-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hotel-images {
+        order: 1;
+        height: 250px;
+    }
+    
+    .hotel-info {
+        order: 2;
+        margin-top: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .destination-hero {
+        height: 50vh;
+        min-height: 300px;
+    }
+    
+    .destination-title {
+        font-size: 2rem;
+    }
+    
+    .destination-badge {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .hotel-carousel {
+        height: 180px;
+    }
+
+    .hotel-accordion-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .hotel-images {
+        height: 180px;
+    }
+
+    .date-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .date-option {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .container-data {
+        grid-template-columns: 1fr;
+    }
+
+    .whatsapp-btn {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .destination-title {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .date-group {
+        grid-template-columns: 1fr;
+    }
+
+    .date-option {
+        padding: 0.5rem;
+    }
+
+    .date-day {
+        font-size: 1.2rem;
+    }
+
+    .date-month {
+        font-size: 0.7rem;
+    }
+
+    .hotel-name {
+        font-size: 0.7rem;
+    }
+    
+    .destination-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .destination-badge {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    
+    .tab-btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .date-card {
+        padding: 0.8rem;
+    }
+    
+    .date-range {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .date-range i.fas {
+        display: none;
+    }
+}
+
+/* ==================================================
+AJUSTES ESPECÍFICOS PARA TABLETS (768px - 1024px)
+================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .date-options-container {
+        padding: 0 1.5rem;
+    }
+
+    
+    .date-group {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    
+    .date-option {
+        padding: 1rem;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .date-info {
+        margin-bottom: 0.5rem;
+    }
+
+    .date-day {
+        font-size: 1.3rem;
+    }
+
+    .date-month {
+        font-size: 0.8rem;
+    }
+
+    .date-label {
+        font-size: 0.7rem;
+    }
+
+    .hotel-name {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    
+    .container-data {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    
+    .cta-container {
+        max-width: 100%;
+        margin: 2rem auto;
+    }
+
+    .whatsapp-btn {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+
+    .month-header h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .month-group {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (min-width: 820px) and (max-width: 1280px) {
+    .date-group {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .date-option {
+        padding: 1.2rem;
+    }
+
+    .date-day {
+        font-size: 1.4rem;
+    }
+
+    .date-month {
+        font-size: 0.85rem;
+    }
+
+    .hotel-name {
+        font-size: 0.8rem;
+    }
+
+    .price-display {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .date-group {
+        grid-template-columns: 1fr;
+    }
+
+    .date-option {
+        min-height: 90px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+    .date-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
