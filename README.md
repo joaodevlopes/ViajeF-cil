@@ -4,7 +4,7 @@
 
 Viaje Fácil é um site moderno e responsivo voltado para turismo e viagens, oferecendo uma experiência intuitiva e atrativa para usuários que buscam organizar ou planejar suas aventuras. Com um design focado em usabilidade, o site apresenta seções claras e links úteis para contato rápido via WhatsApp.
 
-🔗 **Acesse aqui:** [viajefacil-siteoficial.netlify.app](https://viajefacil-siteoficial.netlify.app/)
+🔗 <a href="https://viajefacil-siteoficial.netlify.app/" target="_blank">Acesse o site oficial</a>
 
 ---
 
